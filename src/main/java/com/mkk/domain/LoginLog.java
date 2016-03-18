@@ -3,6 +3,8 @@ package com.mkk.domain;
 import java.io.Serializable;
 import java.util.Date;
 
+import org.springframework.stereotype.Component;
+
 import lombok.Data;
 
 @Data
@@ -11,6 +13,7 @@ import lombok.Data;
  * @author 阿术
  *
  */
+@Component
 public class LoginLog implements Serializable{/**
 	 * 
 	 */

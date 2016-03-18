@@ -3,6 +3,9 @@ package com.mkk.domain;
 import java.io.Serializable;
 import java.util.Date;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 import lombok.Data;
 
 @Data
@@ -11,6 +14,7 @@ import lombok.Data;
  * @author 阿术
  *
  */
+@Component
 public class User implements Serializable{
 
 	/**
@@ -24,4 +28,7 @@ public class User implements Serializable{
 	private int credits;
 	private String lastIp;
 	private Date lastVisit;
+	@Autowired
+	private LoginLog loginLog;
+	
 }
